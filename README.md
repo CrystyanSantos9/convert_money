@@ -5,5 +5,5 @@
  Entendendo Java Script
  Usando Express e Node.JS
  
- Para iniciar digite NPM install. 
+obs: instale o node na sua máquina. 
  
