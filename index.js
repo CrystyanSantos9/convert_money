@@ -27,9 +27,9 @@ app.get('/', (req, res) => {
 })
 
 // criando rota com renderização
-app.get('/home', (req, res) => {
-    res.render('home')
-})
+// app.get('/home', (req, res) => {
+//     res.render('home')
+// })
 
 //criando a rota cotacao
 app.get('/cotacao', (req, res) => {
