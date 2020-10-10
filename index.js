@@ -23,12 +23,12 @@ app.listen(3000, err => {
 
 //criando rotas com os methodos
 app.get('/', (req, res) => {
-    res.send({ Mensagem: 'Bem vindo' })
+    res.render('home')
 })
 
-//criando rota com renderização
+// criando rota com renderização
 app.get('/home', (req, res) => {
-    res.render('home', { name: 'Crystyan' })
+    res.render('home')
 })
 
 //criando a rota cotacao
@@ -40,7 +40,7 @@ app.get('/cotacao', (req, res) => {
     if (cotacao && quantidade) {
         const conversao = convert.convert(cotacao, quantidade)
         res.render('cotacao', {
-            error:false,
+            error: false,
             cotacao: convert.toMoney(cotacao),
             quantidade: convert.toMoney(quantidade),
             conversao: convert.toMoney(conversao),
