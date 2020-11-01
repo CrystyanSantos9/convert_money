@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
 
+
 //lida com os paths se windows /xx/ se linux etc\xx\
 const path = require('path')
 
@@ -9,6 +10,9 @@ app.set('view engine', 'ejs')
 
 //importando nosso código
 const convert = require('./lib/convert')
+
+//importanto bcbAPI
+const apiBCB = require('./lib/api.bcb')
 
 //Diretório da view
 app.set('views', path.join(__dirname, 'views'))
@@ -22,8 +26,11 @@ app.listen(3000, err => {
 })
 
 //criando rotas com os methodos
-app.get('/', (req, res) => {
-    res.render('home')
+app.get('/', async (req, res) => {
+    const cotacao = await apiBCB.getCotacao()
+    res.render('home',{
+      cotacao  
+    })
 })
 
 // criando rota com renderização

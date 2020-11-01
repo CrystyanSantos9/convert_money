@@ -2,7 +2,9 @@
 
 <div class="result">
   <% if (error){ %>
+    <div class="alert alert-danger" role="alert">
   <%= error %>
+    </div>
   <% }else{ %>
   <%= quantidade %> dolares na cotação
   <%= cotacao %> é igual a
