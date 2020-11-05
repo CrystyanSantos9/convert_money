@@ -1,4 +1,10 @@
-body {
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+
+h1{
+  display: block;
   text-align: center;
 }
 
@@ -8,26 +14,65 @@ h1 img {
   margin: 20px;
 }
 
+
+
+form{
+  height: 250px;
+  width: 400px;
+  display: block;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5em;
+}
+
 input {
-  display: inline-block;
+  display: block;
   border: 1px solid #000000;
-  background: rgb(209, 210, 211);
   padding: 4px;
   font-size: 22px;
   margin: 4px;
+  margin-right: auto;
+  margin-left: auto;
+  line-height: 40px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: yellowgreen 3px solid;
+  background: turquoise;
+  color:white;
+}
+
+span{
+  display: block;
+  width: 120px;
+  padding: 4px;
+  background-color: rgb(238, 82, 10);
+  margin-right: auto;
+  margin-left: auto;
+  color: white;
+  margin-bottom: 20px;
+  border-radius: 5px;
 }
 
 button {
-  display: inline-block;
+  display: block;
   border: 1px solid #000000;
-  background: rgb(209, 210, 211);
+  background: rgb(146, 238, 8);
   padding: 4px;
   font-size: 22px;
   margin: 2px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 5px;
+  line-height: 40px;
+  color: rgb(132, 0, 255);
 }
 
 .result {
   padding: 10px;
   border: 1px solid #d8d8d8;
-  background: #fdfdfd;
+  background: #94ffe4;
+  text-align: center;
+  font-size: 2.5em;
+  line-height: 200px;
 }
